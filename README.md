@@ -1,2 +1,2 @@
-# algoritma-huseyin
+# MasterMind 
  
