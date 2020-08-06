@@ -26,9 +26,9 @@ class MainActivity : AppCompatActivity() {
                 new[i] = prediction[i]
             }
             posChecker(new, randomizedChars)
-            Log.e("Ben", "" + new.joinToString(" "))
+            Log.e("Prediction", "" + new.joinToString(" "))
             Log.e(
-                "Rand",
+                "Computer",
                 "" + randomizedChars[0] + " " + randomizedChars[1] + " " + randomizedChars[2] + " " + randomizedChars[3]
             )
             Log.e("mtvc", "" + moreThanOneFinder(new))
@@ -41,10 +41,11 @@ class MainActivity : AppCompatActivity() {
             if (txtCnt == 9 && positions != 4) {
                 for (i in 0 until 10)
                     textWriter(i, "OYUN BITTI")
-            } else if (positions == 4)
+            } else if (positions == 4) {
                 for (i in 0 until 10)
                     textWriter(i, "TEBRİKLER")
-
+            textView15.setText("")
+            }
         }
         editText.setOnClickListener() {
             editText.setText("")
